@@ -9,6 +9,7 @@ URL = os.getenv("ODOO_URL", "http://localhost:8069")
 DB = os.getenv("ODOO_DB", "poc_db")
 USERNAME = os.getenv("ODOO_USERNAME", "admin")
 PASSWORD = os.getenv("ODOO_PASSWORD")
+WHATSAPP_ACCESS_TOKEN = os.getenv("WHATSAPP_ACCESS_TOKEN")
 
 if not PASSWORD:
     raise RuntimeError(

@@ -49,11 +49,13 @@ def process_parsed_order(
 def process_order(
     whatsapp_number,
     message,
-    saved_name=None
+    saved_name=None,
+    image_path=None
 ):
 
     parsed = parse_order(
-        message
+        message,
+        image_path=image_path
     )
 
     return process_parsed_order(
