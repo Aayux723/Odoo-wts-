@@ -3,8 +3,8 @@ import os
 
 from fastapi import FastAPI, Request
 
-from ai_parser import load_local_env
 from ai_parser import parse_order
+from env_utils import load_local_env
 from order_utils import is_sales_order_request
 
 app = FastAPI()

@@ -1,6 +1,6 @@
 import os
 
-from ai_parser import load_local_env
+from env_utils import load_local_env
 
 
 load_local_env()
