@@ -6,7 +6,7 @@ ERP-Flow is an automated, multimodal order processing pipeline that connects Wha
 
 By converting free-form texts, photos of handwritten notes, and screenshots into structured Odoo Sales Orders automatically, this platform eliminates manual data entry and streamlines sales workflows.
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Webhook-Driven Pipeline**: Real-time integration with the Meta WhatsApp Cloud API via a robust FastAPI backend.
 *   **Multimodal AI Order Extraction**: Utilizes Google Gemini Vision to accurately extract products and quantities from:
@@ -17,14 +17,14 @@ By converting free-form texts, photos of handwritten notes, and screenshots into
 *   **Robust Error Handling**: Includes duplicate webhook protection, graceful AI fallback mechanisms, and lazy Odoo authentication to ensure system stability.
 *   **Docker Ready**: Designed to work seamlessly with containerized Odoo and PostgreSQL environments.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 *   **Backend**: Python, FastAPI, Uvicorn
 *   **AI/ML**: Google Gemini API (`gemini-2.5-flash`, `gemini-2.0-flash`), Gemini Vision
 *   **ERP/Database**: Odoo ERP, PostgreSQL (Dockerized)
 *   **Integrations**: Meta WhatsApp Cloud API, Odoo XML-RPC
 
-## 📁 Project Structure
+## Project Structure
 
 *   `webhook.py`: Main FastAPI application handling incoming WhatsApp webhook events and routing messages.
 *   `ai_parser.py`: Interfaces with the Google Gemini SDK to parse text and image-based orders into structured JSON.
@@ -33,7 +33,7 @@ By converting free-form texts, photos of handwritten notes, and screenshots into
 *   `customer.py` / `product.py` / `sales.py`: Handlers for searching/creating Odoo records (Customers, Products, Sales Orders) via XML-RPC.
 *   `odoo_client.py`: Manages the XML-RPC connection and authentication with the Odoo server.
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Prerequisites
 *   Python 3.9+
